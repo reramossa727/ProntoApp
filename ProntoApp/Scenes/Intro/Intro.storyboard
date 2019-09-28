@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="N38-cs-3bT">
+            <objects>
+                <viewController storyboardIdentifier="IntroViewController" id="tXH-80-5ci" customClass="IntroViewController" customModule="ProntoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ggD-vQ-WSw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHS-YH-ton" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="37.5" y="193.5" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="0fz-yH-2lj"/>
+                                    <constraint firstAttribute="height" constant="300" id="5i2-ig-mAw"/>
+                                    <constraint firstAttribute="width" secondItem="DHS-YH-ton" secondAttribute="height" multiplier="1:1" id="9N2-Dg-nDt"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dOq-Bb-Vp2">
+                                <rect key="frame" x="67.5" y="85" width="240" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="N4b-w1-790"/>
+                                    <constraint firstAttribute="width" secondItem="dOq-Bb-Vp2" secondAttribute="height" multiplier="48:11" id="QxU-8D-kHD"/>
+                                    <constraint firstAttribute="height" constant="55" id="bDy-1a-e9k"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dOq-Bb-Vp2" firstAttribute="centerX" secondItem="ggD-vQ-WSw" secondAttribute="centerX" id="2ex-fa-ifp"/>
+                            <constraint firstItem="DHS-YH-ton" firstAttribute="centerX" secondItem="qII-24-bA6" secondAttribute="centerX" id="CRN-2y-Mmp"/>
+                            <constraint firstItem="dOq-Bb-Vp2" firstAttribute="top" secondItem="qII-24-bA6" secondAttribute="top" constant="65" id="Mz3-hB-Jn2"/>
+                            <constraint firstItem="DHS-YH-ton" firstAttribute="centerY" secondItem="qII-24-bA6" secondAttribute="centerY" id="UL6-H9-qvf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qII-24-bA6"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="DHS-YH-ton" id="t0n-Qm-Jyq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X8N-cD-OgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="210.94452773613196"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="448" height="134"/>
+    </resources>
+</document>
