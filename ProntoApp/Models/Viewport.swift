@@ -12,10 +12,3 @@ struct Viewport : Codable {
     let northeast : Northeast?
     let southwest : Southwest?
 }
-
-//extension Viewport : Codable {
-//    enum CodingKeys: String, CodingKey {
-//        case northeast
-//        case southwest
-//    }
-//}

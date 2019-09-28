@@ -12,10 +12,3 @@ struct Location : Codable  {
     let lng : Double?
     
 }
-
-//extension Location : Codable {
-//    enum CodingKeys: String, CodingKey {
-//        case lat
-//        case lng
-//    }
-//}

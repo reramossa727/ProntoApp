@@ -10,14 +10,4 @@ import Foundation
 
 struct Geometry : Codable{
     let location : Location?
-    //let viewport : Viewport?
-
 }
-
-//extension Geometry : Codable{
-//    enum CodingKeys: String, CodingKey {
-//
-//        case location
-//        case viewport
-//    }
-//}

@@ -12,10 +12,3 @@ struct Southwest : Codable {
     let lat : Double?
     let lng : Double?
 }
-
-//extension Southwest : Codable {
-//    enum CodingKeys: String, CodingKey {
-//        case lat
-//        case lng
-//    }
-//}
